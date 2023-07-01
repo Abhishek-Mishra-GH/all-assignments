@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
+
 
 app.use(express.json());
 
-let ADMINS = [];
-let USERS = [];
-let COURSES = [];
+
 
 // Admin routes
 app.post('/admin/signup', (req, res) => {
